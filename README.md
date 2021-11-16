@@ -1,5 +1,5 @@
 # Android Final Project
-###Requirements
+### Requirements
 - Recycler view
 - Constraint Layout
 - Navigation Drawer
@@ -11,7 +11,7 @@
 
 # Editor.md
 
-![app structure](https://github.com/stefanYli/AndroidFinalProject/Documentation/appDesign.png?raw=true)
+![app structure](https://github.com/stefanYli/AndroidFinalProject/Documentation/appDesign.png)
 
 **Table of Contents**
 
