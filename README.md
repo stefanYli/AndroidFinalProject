@@ -11,7 +11,7 @@
 
 # Editor.md
 
-![app structure](https://github.com/stefanYli/AndroidFinalProject/tree/main/Documentation/appDesign.png?raw=true)
+![app structure](https://github.com/stefanYli/AndroidFinalProject/blob/main/Documentation/appDesign.png?raw=true)
 
 **Table of Contents**
 
