@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myFirstFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkTheme"
+    tools:context=".fragment.BlankFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!-- Fragment Title -->
+    <TextView
+        android:id="@+id/fragmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Best Settings"
+        android:textColor="@color/accentWhite"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ISO Text  -->
+    <TextView
+        android:id="@+id/textIso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="ISO"
+        android:textColor="@color/accentYellow"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTitle" />
+
+    <!-- ISO Value  -->
+    <TextView
+        android:id="@+id/valueISO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="ISO Value"
+        android:textColor="@color/accentWhite"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textIso"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTitle" />
+
+    <!-- Shutter Speed Text-->
+    <TextView
+        android:id="@+id/textShutterSpeed"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textColor="@color/accentYellow"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toEndOf="@+id/valueISO"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTitle"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <!-- Shutter Speed Value  -->
+    <TextView
+        android:id="@+id/valueShutter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="S Value"
+        android:textColor="@color/accentWhite"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/textShutterSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTitle" />
+
+    <!-- WB Text -->
+    <TextView
+        android:id="@+id/textWB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WB"
+        android:textColor="@color/accentYellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toEndOf="@+id/textEv"
+        app:layout_constraintTop_toBottomOf="@+id/textShutterSpeed"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <!-- WB Value -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/valueWB"
+        android:text="WB Value"
+        android:textColor="@color/accentWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textWB"
+        app:layout_constraintTop_toBottomOf="@+id/valueShutter"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <!-- EV Text -->
+    <TextView
+        android:id="@+id/textEv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="EV"
+        android:textColor="@color/accentYellow"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textIso"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <!-- EV Value -->
+    <TextView
+        android:id="@+id/valueEV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EV Value"
+        android:textColor="@color/accentWhite"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textWB"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toEndOf="@+id/textEv"
+        app:layout_constraintTop_toBottomOf="@+id/valueISO"
+        app:layout_constraintVertical_bias="0.022" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
