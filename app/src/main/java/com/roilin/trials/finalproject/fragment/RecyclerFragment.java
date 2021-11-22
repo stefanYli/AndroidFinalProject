@@ -66,24 +66,24 @@ public class RecyclerFragment extends Fragment {
         return view;
     }
 
-    private class RecyclerViewHolder extends RecyclerView.ViewHolder
-    {
-
-        private CardView mCardView;
-
-        public RecyclerViewHolder(View itemView)
-        {
-            super(itemView);
-        }
-
-        public RecyclerViewHolder(LayoutInflater inflater, ViewGroup container)
-        {
-            super(inflater.inflate(R.layout.card_view,container,false));
-
-            mCardView = itemView.findViewById(R.id.cardContainer);
-
-        }
-    }
+//    private class RecyclerViewHolder extends RecyclerView.ViewHolder
+//    {
+//
+//        private CardView mCardView;
+//
+//        public RecyclerViewHolder(View itemView)
+//        {
+//            super(itemView);
+//        }
+//
+//        public RecyclerViewHolder(LayoutInflater inflater, ViewGroup container)
+//        {
+//            super(inflater.inflate(R.layout.card_view,container,false));
+//
+//            mCardView = itemView.findViewById(R.id.cardContainer);
+//
+//        }
+//    }
 }
 
 

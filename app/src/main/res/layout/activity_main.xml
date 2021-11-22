@@ -7,27 +7,38 @@
     android:background="@color/darkTheme"
     tools:context=".MainActivity">
 
-<!-- Fragment for Value Display -->
-    <fragment
-        android:id="@+id/myFirstFragment"
-        android:name="com.roilin.trials.finalproject.fragment.BlankFragment"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="512dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Sample Text"
+        android:textColor="@color/accentWhite"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <!-- Fragment for Card RecyclerView -->
-    <fragment
-        android:id="@+id/recyclerFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+<!-- Fragment for Value Display -->
+<!--    <fragment-->
+<!--        android:id="@+id/myFirstFragment"-->
+<!--        android:name="com.roilin.trials.finalproject.fragment.BlankFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginBottom="512dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--    &lt;!&ndash; Fragment for Card RecyclerView &ndash;&gt;-->
+<!--    <fragment-->
+<!--        android:id="@+id/recyclerFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myFirstFragment"
-        />
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/myFirstFragment"-->
+<!--        />-->
 </androidx.constraintlayout.widget.ConstraintLayout>
