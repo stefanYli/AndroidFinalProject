@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/myFirstFragment"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/darkTheme"
     tools:context=".fragment.BlankFragment">
 
@@ -56,23 +56,23 @@
         app:layout_constraintTop_toBottomOf="@+id/fragmentTitle" />
 
     <!-- Shutter Speed Text-->
+
+    <!-- Shutter Speed Value  -->
     <TextView
         android:id="@+id/textShutterSpeed"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="S"
         android:textColor="@color/accentYellow"
-        android:textSize="24sp"
 
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toEndOf="@+id/valueISO"
-        app:layout_constraintTop_toBottomOf="@+id/fragmentTitle"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintTop_toBottomOf="@+id/fragmentTitle" />
 
-    <!-- Shutter Speed Value  -->
     <TextView
         android:id="@+id/valueShutter"
         android:layout_width="wrap_content"
@@ -87,35 +87,34 @@
         app:layout_constraintTop_toBottomOf="@+id/fragmentTitle" />
 
     <!-- WB Text -->
+
+    <!-- WB Value -->
+
+    <!-- EV Text -->
+
     <TextView
         android:id="@+id/textWB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
         android:text="WB"
         android:textColor="@color/accentYellow"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintStart_toEndOf="@+id/textEv"
-        app:layout_constraintTop_toBottomOf="@+id/textShutterSpeed"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toBottomOf="@+id/textShutterSpeed" />
 
-    <!-- WB Value -->
     <TextView
+        android:id="@+id/valueWB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/valueWB"
         android:text="WB Value"
         android:textColor="@color/accentWhite"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toEndOf="@+id/textWB"
-        app:layout_constraintTop_toBottomOf="@+id/valueShutter"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toBottomOf="@+id/valueShutter" />
 
-    <!-- EV Text -->
     <TextView
         android:id="@+id/textEv"
         android:layout_width="wrap_content"
@@ -124,26 +123,19 @@
         android:text="EV"
         android:textColor="@color/accentYellow"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textIso"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintTop_toBottomOf="@+id/textIso" />
 
     <!-- EV Value -->
     <TextView
         android:id="@+id/valueEV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:text="EV Value"
         android:textColor="@color/accentWhite"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textWB"
-        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toEndOf="@+id/textEv"
-        app:layout_constraintTop_toBottomOf="@+id/valueISO"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toBottomOf="@+id/valueISO" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
